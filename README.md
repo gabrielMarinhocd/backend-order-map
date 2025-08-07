@@ -20,7 +20,7 @@ classDiagram
         +string status
         +int active
         +Client client
-        +Restaurant restaurant
+        +Item item
     }
 
     class Client {
@@ -28,17 +28,19 @@ classDiagram
         +string name
         +string latitude
         +string longitude
+        +string url_icon
         +int active
     }
 
-    class Restaurant {
+    class Item {
         +int id
         +string name
         +string latitude
         +string longitude
+        +string url_icon
         +int active
     }
 
     Order --> Client
-    Order --> Restaurant
+    Order --> Item
 ```
