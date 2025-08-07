@@ -47,6 +47,7 @@ public class ClientServiceImpl implements ClientService {
         dbClient.setName(ClientToUpdate.getName());
         dbClient.setLatitude(ClientToUpdate.getLatitude());
         dbClient.setLongitude(ClientToUpdate.getLongitude());
+        dbClient.setUrl_icon(ClientToUpdate.getUrl_icon());
         dbClient.setActive(ClientToUpdate.getActive());
 
         return this.clientRepository.save(dbClient);

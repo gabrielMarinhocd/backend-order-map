@@ -14,6 +14,7 @@ public class Client {
     private String name;
     private String latitude;
     private String longitude;
+    private String url_icon;
     private int active;
 
     public Long getId() {
@@ -46,6 +47,14 @@ public class Client {
 
     public void setLongitude(String longitude) {
         this.longitude = longitude;
+    }
+
+    public String getUrl_icon() {
+        return url_icon;
+    }
+
+    public void setUrl_icon(String url_icon) {
+        this.url_icon = url_icon;
     }
 
     public int getActive() {
