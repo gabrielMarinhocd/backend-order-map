@@ -47,6 +47,7 @@ public class ItemServiceImpl implements ItemService {
         dbItem.setName(itemToUpdate.getName());
         dbItem.setLatitude(itemToUpdate.getLatitude());
         dbItem.setLongitude(itemToUpdate.getLongitude());
+        dbItem.setUrl_icon(itemToUpdate.getUrl_icon());
         dbItem.setActive(itemToUpdate.getActive());
 
         return this.itemRepository.save(dbItem);
