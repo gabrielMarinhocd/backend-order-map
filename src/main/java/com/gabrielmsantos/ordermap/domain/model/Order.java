@@ -20,8 +20,8 @@ public class Order {
     private Client client;
 
     @ManyToOne
-    @JoinColumn(name = "restaurant_id", referencedColumnName = "id")
-    private Restaurant restaurant;
+    @JoinColumn(name = "item_id", referencedColumnName = "id")
+    private Item item;
 
     public Long getId() {
         return id;
@@ -71,11 +71,11 @@ public class Order {
         this.client = client;
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
+    public Item getItem() {
+        return item;
     }
 
-    public void setRestaurant(Restaurant restaurant) {
-        this.restaurant = restaurant;
+    public void setItem(Item item) {
+        this.item = item;
     }
 }

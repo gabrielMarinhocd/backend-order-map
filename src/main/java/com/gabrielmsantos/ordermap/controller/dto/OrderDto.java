@@ -2,14 +2,14 @@ package com.gabrielmsantos.ordermap.controller.dto;
 
 import com.gabrielmsantos.ordermap.domain.model.Client;
 import com.gabrielmsantos.ordermap.domain.model.Order;
-import com.gabrielmsantos.ordermap.domain.model.Restaurant;
+import com.gabrielmsantos.ordermap.domain.model.Item;
 
 import java.sql.Timestamp;
 
-public record OrderDto (Long id, Timestamp dt, String description, String status, int active, Client client, Restaurant restaurant){
+public record OrderDto (Long id, Timestamp dt, String description, String status, int active, Client client, Item item){
 
     public OrderDto(Order model) {
-        this(model.getId(), model.getDt(), model.getDescription(), model.getStatus(), model.getActive(), model.getClient(), model.getRestaurant());
+        this(model.getId(), model.getDt(), model.getDescription(), model.getStatus(), model.getActive(), model.getClient(), model.getItem());
     }
 
     public Order toModel() {
@@ -20,7 +20,7 @@ public record OrderDto (Long id, Timestamp dt, String description, String status
         model.setStatus(this.status);
         model.setActive(this.active);
         model.setClient(this.client);
-        model.setRestaurant(this.restaurant);
+        model.setItem(this.item);
         return model;
     }
 

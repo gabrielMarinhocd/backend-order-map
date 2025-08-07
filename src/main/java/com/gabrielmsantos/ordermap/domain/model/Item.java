@@ -5,8 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity(name = "tb_restaurant")
-public class Restaurant {
+@Entity(name = "tb_item")
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -47,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
         dbOrder.setDt(orderToUpdate.getDt());
         dbOrder.setDescription(orderToUpdate.getDescription());
         dbOrder.setClient(orderToUpdate.getClient());
-        dbOrder.setRestaurant(orderToUpdate.getRestaurant());
+        dbOrder.setItem(orderToUpdate.getItem());
         dbOrder.setActive(orderToUpdate.getActive());
 
         return this.orderRepository.save(dbOrder);

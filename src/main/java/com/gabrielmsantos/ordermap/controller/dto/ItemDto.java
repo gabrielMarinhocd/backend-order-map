@@ -1,15 +1,15 @@
 package com.gabrielmsantos.ordermap.controller.dto;
 
-import com.gabrielmsantos.ordermap.domain.model.Restaurant;
+import com.gabrielmsantos.ordermap.domain.model.Item;
 
-public record RestaurantDto(Long id, String name, String latitude, String longitude, int active) {
+public record ItemDto(Long id, String name, String latitude, String longitude, int active) {
 
-    public RestaurantDto(Restaurant model) {
+    public ItemDto(Item model) {
         this(model.getId(), model.getName(), model.getLatitude(), model.getLongitude(), model.getActive());
     }
 
-    public Restaurant toModel() {
-        Restaurant model = new Restaurant();
+    public Item toModel() {
+        Item model = new Item();
         model.setId(this.id);
         model.setName(this.name);
         model.setLatitude(this.latitude);
