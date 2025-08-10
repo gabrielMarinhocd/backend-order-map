@@ -44,3 +44,6 @@ classDiagram
     Order --> Client
     Order --> Item
 ```
+<p align="center">
+  <img src="https://github.com/gabrielMarinhocd/backend-order-map/blob/main/docs/class-diagram0.jpg?raw=true" width="600" alt="Class Diagram">
+</p>
