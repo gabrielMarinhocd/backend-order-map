@@ -2,8 +2,8 @@
 
 RESTful API OrderMap 2025 built with Java 17 and Spring Boot 3.
 
-##Frontend Repository
-<br>
+## Frontend Repository
+
 <a href="https://github.com/gabrielMarinhocd/frontend-order-map" target="_blank">gabrielMarinhocd/frontend-order-map</a>
 
 ## Main Technologies
